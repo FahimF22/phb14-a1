@@ -126,7 +126,6 @@ img {
   flex-shrink: 0;
 }
 
-
 .banner {
   position: relative;
   min-height: 640px;
@@ -174,11 +173,99 @@ img {
   padding: 0.85rem 2.2rem;
 }
 
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-subheading {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+.speakers {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.speaker-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.speaker-photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  background: var(--border);
+}
+
+.speaker-info {
+  padding: 1.2rem 1.5rem 1.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+}
+
+.tag-ai {
+  background: #E7EBFF;
+  color: #2F5DF7;
+}
+
+.tag-cloud {
+  background: #E4F6EE;
+  color: #17875C;
+}
+
+.tag-frontend {
+  background: #FFF1DE;
+  color: #B4650B;
+}
+
+.tag-security {
+  background: #FCE8EA;
+  color: #C42D45;
+}
+
+.speaker-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.speaker-role {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 @media (max-width: 700px) {
   .nav-menu {
     display: none;
   }
   .banner-heading {
     font-size: 2.2rem;
+  }
+  .speaker-grid {
+    grid-template-columns: 1fr;
   }
 }
