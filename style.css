@@ -126,8 +126,59 @@ img {
   flex-shrink: 0;
 }
 
+
+.banner {
+  position: relative;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("./assets/banner.jpg") center / cover no-repeat, var(--ink);
+  color: #fff;
+  padding: 2rem;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,18,32,0.55) 0%, rgba(11,18,32,0.85) 100%);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.banner-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.banner-heading em {
+  font-style: italic;
+  color: #8FA9FF;
+}
+
+.banner-sub {
+  font-size: 1.05rem;
+  color: #D7DBE6;
+  margin-bottom: 2rem;
+}
+
+.banner-cta {
+  font-size: 1rem;
+  padding: 0.85rem 2.2rem;
+}
+
 @media (max-width: 700px) {
   .nav-menu {
     display: none;
+  }
+  .banner-heading {
+    font-size: 2.2rem;
   }
 }
