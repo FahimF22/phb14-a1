@@ -384,6 +384,101 @@ img {
     color: #8991AE;
 }
 
+.hackathon {
+    background: #092a38;
+    color: #48c8ff;
+    padding: 5rem 2rem;
+}
+
+.hackathon-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hackathon-kicker {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8FA9FF;
+    background: rgba(47, 93, 247, 0.15);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 1.2rem;
+}
+
+.hackathon-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.hackathon-sub {
+    color: #B7BDD4;
+    max-width: 560px;
+    margin: 0 auto 2.5rem;
+}
+
+.hackathon-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #8991AE;
+    margin-top: 0.2rem;
+}
+
+.track-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.track-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius);
+    padding: 1.8rem 1.2rem;
+    text-align: left;
+}
+
+.track-emoji {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.track-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.track-desc {
+    font-size: 0.88rem;
+    color: #B7BDD4;
+}
+
+.hackathon-cta {
+    font-size: 1rem;
+    padding: 0.85rem 2.2rem;
+}
+
 @media (max-width: 700px) {
     .nav-menu {
         display: none;
@@ -407,6 +502,13 @@ img {
     .footer-inner {
         flex-direction: column;
         text-align: center;
-  }
+    }
 
+    .hackathon-stats {
+        gap: 1.5rem;
+    }
+
+    .track-grid {
+        grid-template-columns: 1fr;
+    }
 }
